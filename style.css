@@ -1,0 +1,517 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+}
+body{
+    background-color: rgb(2, 39, 57);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(1, 23, 34);
+}
+nav .logo{
+  font-size: 2rem;
+  margin-left: 55px;
+  line-height: 80px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    /* margin: 0px 35px; */
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+}
+nav ul li a.active,a:hover{
+     color:  rgb(10, 98, 143);
+}
+#checkbtn{
+    float: right;
+    margin-right: 15px;
+    line-height: 80px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0%;
+}
+@media(max-width:734px){
+    #checkbtn{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background: rgb(1, 23, 34);
+        position: fixed;
+        top: 80px;
+        left: -100%;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+    
+    }
+}
+.first{
+    width: 35vw;
+    margin-top: 200px;
+    margin-left: 55px;  
+}
+.first h2{
+    font-size: 2.2rem;
+}
+.first span{
+    font-size: 2rem;
+    margin: 7px 0px;
+    color: rgb(43, 155, 210);
+}
+.first p{
+    font-size: 1.2rem;
+}
+.sec::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    background: url(h2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 88%;
+    z-index: -1;
+    animation-name: image;
+    margin-top: 70px;
+} .first .btn1{
+    margin: 15px 0px;
+}
+
+.first .btn1 a{
+    text-decoration: none;
+   padding: 3px 5px;
+   font-size: 1.2rem;
+}
+ .a1{
+    color:  rgb(1, 25, 37);
+    background-color:  rgb(43, 155, 210);
+}
+.a1:hover{
+    background-color:  rgb(17, 128, 183);
+}
+.a1:active{
+    background-color:  rgb(17, 128, 183);
+}
+.a2{
+   color:  rgb(43, 155, 210);
+   border: 2px solid rgb(43, 155, 210);
+   margin-left: 10px;
+}
+.a2:hover{
+    color: rgb(79, 179, 229);
+}
+.a2:active{
+    color: rgb(79, 179, 229);
+}
+
+/* ABOUT */
+.about{
+    margin-top: 250px;
+    text-align: center;
+    width: 70vw;
+    margin-left: 200px;
+}
+.about .ab{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+}
+.ab h2{
+    margin: 0px 7px;
+}
+.about .ab .a4{
+    color:  rgb(60, 170, 225);
+}
+.about img{
+    width: 35%;
+    height: 30%;
+    border-radius: 100%;
+   margin-bottom: 15px;
+}
+.about .ab1{
+    margin: 40px 0px;
+
+}
+.about h3{
+    font-size: 2.1rem;
+}
+.about p{
+    font-size: 1.1rem;
+    margin: 10px 0px;
+}
+.about a{
+    text-decoration: none;
+    padding: 3px 7px;
+   font-size: 1.2rem;
+   background-color:  rgb(63, 179, 238);
+   color:  rgb(1, 21, 31);
+   margin: 5px 0px;
+}
+.about a:hover{
+    background-color: rgb(22, 145, 206);
+}
+
+.about a:active{
+    background-color: rgb(22, 145, 206);
+} 
+/* CONTACT */
+.contain{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact{
+    width: 40%;
+    text-align: center;
+    margin-top: 90px;
+   }
+   
+   .contact .con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    font-size: 2rem;
+   }
+   .contact .con .con1{
+    margin-left: 10px;
+    color:  rgb(54, 161, 214);
+   }
+    .contact .in{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1rem;
+    margin-top: 10px;
+   }
+   .contact .in #name,#email,#num,#date{
+    padding: 7px 7px;
+    border: 2px solid rgb(118, 197, 237);
+    margin: 5px 0px;
+    color: white;
+   }
+   .contact #tex{
+    height: 30vh;
+    padding: 7px 7px;
+    border: 2px solid rgb(118, 197, 237);
+    margin: 7px 0px;
+    width: 98.7%;
+    color: white;
+    margin-bottom: 19px;
+   }
+   .contact input{
+    background-color: rgb(2, 39, 57);
+    color: white;
+   }
+   .contact #submit{
+    text-decoration: none;
+    background-color: rgb(61, 172, 228);
+    color: rgb(1, 21, 31);
+    margin-top: 10px;
+    padding: 7px 9px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 5px;
+  }
+   /* EDUCATION */
+   .education{
+    width: 80%;
+    margin-top: 70px;
+margin-left: 120px;
+   }
+   .educ1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+ }
+ .educ1 h2{
+    margin: 0px 6px;
+ }
+ .educ1 .j{
+    color: rgb(117, 199, 239);
+ }
+.education1 .educ{
+    font-size: 1.8rem;
+    margin: 7px 0px;
+}
+.education1{
+    display: grid;
+grid-template-columns: 1fr 1fr ;
+grid-gap: 1.5rem;
+    margin-top: 25px;
+}
+.education1 .educ3{
+    border: 2px solid rgb(117, 199, 239);
+    margin: 12px 0px ;
+    padding: 7px 0px;
+    padding-left: 8px;
+}
+.education1 .educ h3{
+    font-size: 1.8rem;
+    margin-left: 0px;
+}
+.education1 .educ3 p{
+    font-size: 1rem;
+
+}
+.education1 .educ3 h3{
+    color: rgb(117, 199, 239);
+    margin-bottom: 6px;
+}
+
+/* SKILLS */
+.poster{
+    margin: 25px 0px;
+    text-align: center;
+}
+.poster h3{
+    margin: 30px 0px;
+    font-size: 2.1rem;
+    margin-bottom: 15px;
+}
+.poster span{
+    color: rgb(27, 145, 247);
+}
+.poster img{
+    width: 40vw;
+    margin: 10px 15px;
+}
+.project2{
+    text-align: center;
+}
+.project h3{
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 10px 0px;
+}
+.project h3 span{
+    color: rgb(27, 145, 247); 
+}
+.project{
+    margin: 90px 0px;
+}
+.project1 img{
+    width: 26vw;
+    margin: 10px 14px;
+}
+@media screen and (min-width:0px) and (max-width:400px){
+    .project2{
+        text-align: center;
+    }
+    .project1 img{
+    width: 90vw;
+    margin: 10px 14px;
+}
+.about{
+    margin-top: 80px;
+}
+.about img{
+    width: 70%;
+}
+}
+@media screen and (min-width:400px) and (max-width:768px){
+    .project2{
+        text-align: center;
+    }
+    .project1 img{
+    width: 90vw;
+    margin: 10px 14px;
+}
+.about{
+    margin-top: 150px;
+}
+.about img{
+    width: 70%;
+}
+}
+footer{
+    background-color:  rgb(1, 26, 40);
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 1rem;
+}
+ 
+@media screen and (max-width: 400px) and (min-width: 0px){
+    .about{
+        
+        margin-left:60px;
+        margin-top: 89px;
+    }
+    .first{
+        width: 80vw;
+    }
+    .contact #tex{
+        display: inline
+       }
+       .contact{
+        width: 95%;
+        margin-top: 40px;
+       }
+       .contact .in{
+        display: inline;
+        grid-template-columns: 1fr ;
+        margin-top: 10px;
+       }
+       .contact .in input{
+       width: 95%;
+       display: inline;
+       }
+       .education1{
+        display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 1.5rem;
+    }
+    .education{
+        margin-left: 8px;
+    }
+}
+@media screen and (max-width: 699px) and (min-width: 400px){
+    .about{
+        
+        margin-left:60px;
+    }
+    .first{
+        width: 80vw;
+    }
+    .contact #tex{
+        display: inline
+       }
+       .contact{
+        width: 95%;
+        margin-top: 40px;
+       }
+       .contact .in{
+        display: inline;
+        grid-template-columns: 1fr ;
+        margin-top: 10px;
+       }
+       .contact .in input{
+       width: 95%;
+       display: inline;
+       }
+       .education1{
+        display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 1.5rem;
+    width: 95vw;
+    }
+    .education{
+        margin-left: 15px;
+    }
+    .educ1{
+        margin-left: 60px;
+    }
+    .skills-row{
+        display: inline;
+    }
+    .skills-column{
+        margin-left: 7px;
+    }
+    .heading{
+        margin-bottom: 20px;
+    }
+    .skills-content .bar{
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 699px){
+    .about{
+        
+        margin-left:110px;
+    }
+    .first{
+        width: 80vw;
+    }
+    .contact #tex{
+        width: 95%;
+       }
+       .contact{
+        width: 95%;
+        margin-top: 40px;
+       }
+         .contact .in{
+        display: inline;
+        grid-template-columns: 1fr ;
+        margin-top: 10px;
+       }
+       .contact .in input{
+       width: 95%;
+       display: inline;
+       }
+       .education1{
+        display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 1.5rem;
+      width: 95vw;
+
+    }
+    .education1{
+        margin-left: 10px;
+    }
+    .educ1{
+        margin-left: 116px;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .about{
+        
+        margin-left:120px;
+    }
+    .first{
+        width: 80vw;
+    }
+    .contact #tex{
+        width: 95%;
+       }
+       .contact{
+        margin-top: 30px;
+       }
+       .education{
+    margin-left: 15px;
+    text-align: center;
+       }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px){
+    .about{
+        
+        margin-left:155px;
+        margin-top: 190px;
+    }
+    .education{
+        margin-left: 100px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .about{
+        
+        margin-left:160px;
+        margin-top: 260px;
+    }
+}
